@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>JLifx by robvanderleek</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>JLifx</h1>
+        <p>Lifx control utility in Java</p>
+
+        <p class="view"><a href="https://github.com/robvanderleek/JLifx">View the Project on GitHub <small>robvanderleek/JLifx</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/robvanderleek/JLifx/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/robvanderleek/JLifx/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/robvanderleek/JLifx">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="jlifx" class="anchor" href="#jlifx"><span class="octicon octicon-link"></span></a>JLifx</h1>
+
+<p>Small LIFX Wifi LED bulb control utility in Java.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Build the JAR and run it from the command line:</p>
+
+<pre><code>java -jar jlifx.jar
+</code></pre>
+
+<p>The supported commands are:</p>
+
+<pre><code>scan
+switch  &lt;mac-address|all&gt; &lt;on|off&gt;
+color   &lt;mac-address|all&gt; &lt;color-name|rgb-hex-value&gt;
+blink   &lt;mac-address|all&gt; [times]
+rainbow &lt;mac-address|all&gt;
+</code></pre>
+
+<p>Examples:</p>
+
+<pre><code>java -jar jlifx.jar switch all off
+java -jar jlifx.jar blink AA:BB:CC:DD:EE:FF 3
+java -jar jlifx.jar rainbow all
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/robvanderleek">robvanderleek</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
